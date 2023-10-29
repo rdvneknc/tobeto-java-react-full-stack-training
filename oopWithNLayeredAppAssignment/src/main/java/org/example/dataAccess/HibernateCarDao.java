@@ -7,7 +7,7 @@ public class HibernateCarDao implements CarDao {
 
         public void add(Car car){
 
-            System.out.println("Added to database via Hibernate");
+            System.out.println("Hibernate ile veri tabanına eklendi!");
 
         }
 
