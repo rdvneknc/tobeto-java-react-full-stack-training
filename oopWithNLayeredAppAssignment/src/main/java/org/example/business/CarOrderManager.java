@@ -4,6 +4,7 @@ import org.example.core.logging.Logger;
 import org.example.dataAccess.CarDao;
 import org.example.dataAccess.JdbcCarDao;
 import org.example.entities.Car;
+import org.example.entities.Renault;
 
 public class CarOrderManager {
     private CarDao carDao;
@@ -17,7 +18,7 @@ public class CarOrderManager {
     public void add(Car car) throws Exception{
 
         if (car.getCarYear() <= 2020) {
-            throw new Exception("2020 ve öncesi model araçların satışı yapılmamaktadır!");
+            throw new Exception("2020 ve öncesi model araçların satışı yapılmamaktadır! Lütfen daha üst modelleri deneyiniz!");
         }
 
         carDao.add(car);
@@ -29,6 +30,16 @@ public class CarOrderManager {
             logger.log(car.getCarColor());
 
         }
+    }
+
+    public void add(Renault renault) throws Exception{
+
+        System.out.println(renault.getHorsePower() + " Beygir GÜCÜÜÜÜÜÜ");
+        if (renault.getHorsePower() <= 100){
+            throw new Exception("Beygir gücü 100 veya daha aşağısında olamaz!");
+        }
+
+
     }
 
 
