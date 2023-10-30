@@ -1,24 +1,32 @@
 package Q3;
 
-public class CharacterCount {
+import java.util.Scanner;
 
+public class CharacterCount { // Write a Java program gives character counts in a string Ex: Tobeto -> t:2, o:2, b:1, e:1
     public static void main(String[] args) {
 
-        String string = "Oyun Atı";
-        int count = 0;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a word");
 
+        String input = scan.next();
+        String msg = input.toLowerCase();
 
-//  3-Write a Java program gives character counts in a string Ex: Tobeto -> t:2, o:2, b:1, e:1
+        charCountInString(msg);
 
-        for(int i = 0; i < string.length(); i++) { //
-            if(string.charAt(i) != ' ')
-            {//tobeto string.charAt()
-                count++;
+    }
+
+    public static void charCountInString(String msg){
+        int[]charCount = new int[128];
+
+        for(int i = 0; i < msg.length();i++){ //
+            char c = msg.charAt(i);  //
+            charCount[c] += 1; //
         }
-
-        System.out.println("Total number of characters in this string is : " + count);
+        for (int i=0; i<charCount.length;i++){ //
+            if (charCount[i]>0){  //
+                char c = (char) i; //
+                System.out.println(c + ":" + charCount[i]);
+            }
+        }
     }
-    }
-
 }
-
