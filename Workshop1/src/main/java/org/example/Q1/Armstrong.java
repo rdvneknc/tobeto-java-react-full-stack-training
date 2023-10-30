@@ -2,6 +2,10 @@ package org.example.Q1;
 
 import java.util.Scanner;
 
+// Write a Java program to check if the entered number is Armstrong number?
+
+// Tüm basamaklarındaki rakamların sayı değerlerinin küpleri toplamı,kendisine eşit olan sayılara "Armstrong sayı"denir.
+
 public class Armstrong {
 
     public static void main(String[] args) {

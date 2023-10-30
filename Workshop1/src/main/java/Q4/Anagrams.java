@@ -2,6 +2,9 @@ package Q4;
 
 import java.util.Arrays;
 
+// How to check if two Strings are anagrams of each other?
+
+// Anagram, bir sözcüğün veya sözcük grubunun harflerinin değişik düzenle başka bir sözcüğü veya sözcük grubunu oluşturmasıdır.
 
 public class Anagrams {
     public static void main(String[] args) {
@@ -17,12 +20,12 @@ public class Anagrams {
     }
 
     static boolean areAnagrams(String str1, String str2) {
-        // Check if the lengths of both strings are equal
+
         if (str1.length() != str2.length()) {
             return false;
         }
 
-        // Sort both strings and compare
+
 
         //str1.toCharArray() ifadesi, bir String nesnesindeki karakterleri bir karakter dizisine (char array) dönüştürür.
         char[] charArray1 = str1.toCharArray();

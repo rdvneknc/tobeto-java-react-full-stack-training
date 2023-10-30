@@ -2,6 +2,11 @@ package Q6;
 
 import java.util.Scanner;
 
+// Write a Java program finds first two amicable pairs. (Output: 1-> 220-284 2: 1184-1210)
+
+// Birbirinden farklı iki pozitif tam sayıdan her birinin kendisi hariç pozitif
+// bölenlerinin toplamı diğer sayıyı veriyorsa bu sayı ikilisine bağdaşık (amicable) sayı denir.
+
 public class AmicablePair {
 
     public static void main(String[] args) {
