@@ -8,8 +8,9 @@ public class PerfectNumbers {
 
     public static void main(String[] s1){
 
-        double num, sum = 0;
-        double i;
+        double num = 0;
+        double sum = 0;
+
         for (num = 1; num < 999999999; num++) {
             for (double j = 1; j < num; j++) {
                 if (num % j == 0) {
