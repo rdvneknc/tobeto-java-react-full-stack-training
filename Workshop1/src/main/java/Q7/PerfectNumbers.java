@@ -11,7 +11,7 @@ public class PerfectNumbers {
         double num = 0;
         double sum = 0;
 
-        for (num = 1; num < 8129; num++) {  
+        for (num = 1; num < 8129; num++) {
             for (double j = 1; j < num; j++) {
                 if (num % j == 0) {
                     sum = sum + j;
