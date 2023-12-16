@@ -1,6 +1,13 @@
 package com.tobeto.a.spring.intro.entities;
 
 
+
+// Repository, DAO, DAL
+// Data Access Object
+// Data Access Layer
+
+
+
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
